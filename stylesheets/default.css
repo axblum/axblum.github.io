@@ -1,0 +1,40 @@
+body{
+	background-color: black;
+	margin: 0px 0px;
+	color:green;
+}
+.nav{
+	float:right;
+}
+.logo{
+	float:left;
+}
+a{
+	color: green;
+}
+a:hover{
+	color: white;
+}
+.pano{
+	width: 100%;
+}
+.selfie{
+	float: left;
+	margin-left: 5%;
+}
+.projects {
+	float: left
+	margin-left: 5%;
+}
+.happenings{
+	float:	right;
+	margin-right: 10%
+}
+.main {
+	bottom-padding:100px;
+}
+footer{
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}
