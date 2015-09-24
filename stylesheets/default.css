@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.selfie {
+    position: relative;
+    width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0px 0px;
+    color: green;
+    min-height: 100%;
+}
+.logo-nav{
+	background-color: gray;
+}
+.nav {
+    float: right;
+
+}
+nav ul li{
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+nav ul{
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+
+}
+.logo {
+    float: left;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: white;
+}
+
+.pano {
+    width: 100%;
+}
+
+.col-left {
+    float: left;
+    witdh: 50%;
+}
+
+.col-right {
+    float: right;
+    width: 46%;
+}
+
+.mini-col {
+    float: right;
+    width: 46%;
+}
+
+footer {
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    margin: 0 0;
+    position: absolute;
+    display: block;
+}
+footer ul li{
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+footer ul{
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+footer ul img{
+	width: 30px;
+	height: 30px;
+}
+footer p{
+	margin: 3 3;
+}
+main {
+    padding-bottom: 200px;
+    overflow: hidden;
+    display: block;
+}

@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Andrew Blum</title>
-	</head>
-	<body>
-		<header>
-			<div>
-				<img alt="beaker" src="imgs/beaker.png"> Andrew Blum
-			</div>
-			<div>
-				<a href="blog/index.html">Blog</a>
-				<a href="#">Projects</a>
-				<a href="#">About Me</a>
-				<a href="#">Resume</a>
-			</div><img alt="Concert Pano" src="imgs/pano.jpg">
-		</header>
-		<main>
-		<img alt="Andrew Blum" src="imgs/me.jpeg">
-		<section>
-			<h2>New Happenings</h2>
-			<p>This is what is new with me</p>
-		</section>
-		<section>
-			<h2>Latest Projects</h2>
-			<section>
-				<h3>Project: <a href="#"> name</a> </h3>
-			</section>
-			<section>
-				<h3>Project: <a href="#"> name</a> </h3>
-			</section>
-		</section>
-		</main>
-		<footer>
-			<div>
-				<a href="#">Follow Me on Twitter</a>
-				<a href="#">Follow Me on Github</a>
-			</div>
-			All thoughts are mine
-			<p><a href="imgs/wireframe-index.png">Link to wireframe</a></p>
-		</footer>
-	</body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Andrew Blum</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                <ul>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img alt="Concert Pano" src="imgs/pano.jpg" class="pano">
+        </header>
+        <main>
+            <div class="col-left">
+                <img alt="Andrew Blum" src="imgs/me.jpeg" class="selfie">
+                <div class="mini-col">
+                    <h2>Latest Projects</h2>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                    <h3>Project: <a href="#"> name</a> </h3>
+                </div>
+            </div>
+            <div class="col-right">
+                <h2>New Happenings</h2>
+                <p>This is what is new with me</p>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#"><img src="imgs/twitter_logo.png" alt="twitter">Follow Me on Twitter </a></li>
+                <li><a href="#">Follow Me on Github</a><img src="imgs/github.png" alt="github"></li>
+            </ul>
+            <p>All thoughts are mine</p>
+            <p><a href="imgs/wireframe-index.png">Link to wireframe</a></p>
+        </footer>
+    </div>
+</body>
+
 </html>
