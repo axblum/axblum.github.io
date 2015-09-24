@@ -16,9 +16,6 @@ body {
     color: green;
     min-height: 100%;
 }
-.logo-nav{
-	background-color: gray;
-}
 .nav {
     float: right;
 
@@ -89,6 +86,8 @@ footer ul{
 footer ul img{
 	width: 30px;
 	height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 footer p{
 	margin: 3 3;
