@@ -1,4 +1,10 @@
-section{
+section {
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+h4{
+	margin:5px;
 }

@@ -1,99 +1,94 @@
-body {
-    background-color: black;
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.selfie {
-    position: relative;
-    width: 50%;
-    padding-right: 5px;
-    padding-left: 5px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+    color: #6EB84A;
 }
 
 .wrapper {
     position: relative;
-    margin: 0px 0px;
-    color: green;
     min-height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
-.nav {
-    float: right;
 
+nav ul li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-nav ul li{
-	display: inline;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-nav ul{
-	display: inline;
-	padding: 0px;
-	margin: 0px;
 
+nav ul {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+.logo-nav {
+    height: 30px;
 }
 .logo {
     float: left;
 }
-
-a {
-    color: green;
+.nav {
+	float: right;
+}
+.pano {
+    width: 100%;
+}
+a:link
+{
+	color:#6EB84A;
 }
 
 a:hover {
     color: white;
 }
-
-.pano {
-    width: 100%;
+main {
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+h2{
+	text-align: center;
+	font-size: 2em;
+	margin: .75em auto;
+}
+h3{
+	margin: .75em auto;
 }
 
-.col-left {
+.left-col {
     float: left;
-    witdh: 50%;
+    width: 49%;
+    text-align: center;
+    margin-right: 3px;
 }
 
-.col-right {
-    float: right;
-    width: 46%;
-}
-
-.mini-col {
-    float: right;
-    width: 46%;
+.right-col {
+    float: left;
+    width: 49%;
 }
 
 footer {
+    position: absolute;
     bottom: 0;
     height: 100px;
-    left: 0;
     width: 100%;
     text-align: center;
-    clear: both;
-    margin: 0 0;
-    position: absolute;
-    display: block;
 }
-footer ul li{
-	display: inline;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-footer ul{
-	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-footer ul img{
+footer img{
 	width: 30px;
 	height: 30px;
 	padding-right: 5px;
 	padding-left: 5px;
 }
 footer p{
-	margin: 3 3;
-}
-main {
-    padding-bottom: 200px;
-    overflow: hidden;
-    display: block;
+	margin-top: 3px;
 }
