@@ -51,6 +51,9 @@ a:link
 a:hover {
     color: white;
 }
+a:visited{
+    color: white;
+}
 main {
     margin-bottom: 120px;
     overflow: hidden;
@@ -92,3 +95,4 @@ footer img{
 footer p{
 	margin-top: 3px;
 }
+
