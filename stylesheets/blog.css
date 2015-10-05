@@ -1,9 +1,9 @@
 section {
 	text-align: center;
-	padding: 20px;
 	display: block;
-	width: 100%;
+	width: 95%;
 	height: 100%;
+	padding-top: 20px;
 }
 h4{
 	margin:10px;
@@ -15,6 +15,10 @@ h2,h3{
 section p {
 	margin: 5px;
 
+}
+.code{
+	height: 45%;
+	width: 45%;
 }
 
 
