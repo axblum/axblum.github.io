@@ -55,7 +55,7 @@ a:visited{
     color: white;
 }
 main {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 h2{
@@ -65,6 +65,12 @@ h2{
 }
 h3{
 	margin: .75em auto;
+}
+.aboutme h3 a img{
+    width:61px;
+    height:60px;
+    vertical-align:middle;
+    padding:5px
 }
 
 .left-col {
@@ -82,7 +88,7 @@ h3{
 footer {
     position: absolute;
     bottom: 0;
-    height: 120px;
+    height: 60px;
     width: 100%;
     text-align: center;
 }
