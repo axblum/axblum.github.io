@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>Enumerate All the Things</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="../imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="../aboutme.html">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../imgs/pano.jpg" alt="Concert Pano">
+        </header>
+        <main>
+            <div>
+                <h2>Enumerables:</h2>
+                <h2>Enumerable#group_by</h2>
+                <h3>Posted: 10/11/2015</h3>
+            </div>
+            <section>The Enumerable module in Ruby is like the blueprint of what each method should look like. Each data type that has the Enumerable module included in its source, gets those methods for free without any additional work. If the method needs to be changed for any reason, such as one does not get the expected output, those methods can be overridden from the code. </section>
+            <section>I would like to take a minute to talk about the Enumerable#group_by method and why it can be very helpful at times. As one would expect, the group_by method allows for the grouping of data into a hash.
+            </section>
+            <section> Lets take this example where you had a list of students and you wanted to group them by their sex. One can use the group-by method, to transform an array of arrays (in this case) to group people by their sex.
+            The code might look something like this:
+            </section>
+            <section><img src="../imgs/enum1.png" alt="enum1" class="code"></section>
+            <section> The output of the code would look like this:</section>
+            <section><img src="../imgs/enum2.png" alt="enum2" class="code"></section>
+            <section> For any additional information on Enumerables check out the <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html">ruby docs.</a></section>
+
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/blumandrew"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/axblum"><img src="../imgs/github.png" alt="github"></a>
+            <p>All thoughts are mine &#169 2015 by Andrew Blum, unless otherwise noted.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
