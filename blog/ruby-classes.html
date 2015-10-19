@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/highlight.css">
+    <script src="http://cdn.jsdelivr.net/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <title>Ruby Classes</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="../imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="../aboutme.html">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../imgs/pano.jpg" alt="Concert Pano">
+        </header>
+        <main>
+            <div>
+                <h2>Ruby Classes</h2>
+                <h2>Money</h2>
+                <h3>Posted: 10/18/2015</h3>
+            </div>
+            <section>This Blog post is going to be about Ruby classes and why to use them. Ruby classes are how you build object in Ruby. Lets take a real world example of an object or a thing. In this case I chose to talk about money. If you ever have taken a look at a dollar bill from your wallet. You might notice there is a whole lot of information printed on that dollar bill. Each bill that is printed by the US Treasury has a set of things that are printed on the bill itself, from the serial number of the bill, to how much the bill is worth. It's also worth mentioning that the treasury prints lots of bills, with a template, this is very much how a Ruby class works. Lets use the bill example below.
+            </section>
+            <pre><code class="Ruby">
+          class Money
+            def initialize(denomination,serial_number,country)
+            @denomination = denomination
+            @serial_number = serial_number
+            end
+        end
+            </code></pre>
+            <section>In the example above, we have created an Money class. This is like the template that the US Mint would use to make a new dollar bill.The initialize method is special, because each time a new bill is created, we call the initialize method as seen below.</section>
+            <pre>
+            <code>
+                jackson = Money.new(100,"1234","US")
+            </code>
+            </pre>
+            <section>Not only can a class have instance variables that are denoted with the @ in front of their name. Instance variables allow, for individual properties to be saved with each bill that is printed, such as the serial number. Not only can classes, have properties, but they also can have actions associated with them. Lets say that for a bill to be authentic the serial number of the bill, must be 10 numbers long. We can create a method that is part of the class that would allow us to check if the bill is authentic, like so:</section>
+            <pre><code>
+                def valid
+                    if @serial_number.size = 10
+                        true
+                    else
+                        false
+                    end
+                end
+            </code></pre>
+            <section>As always if you need additional information on how to use classes. I suggest you consult the Ruby-Docs</section>
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/blumandrew"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/axblum"><img src="../imgs/github.png" alt="github"></a>
+            <p>All thoughts are mine &#169 2015 by Andrew Blum, unless otherwise noted.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
