@@ -1,0 +1,29 @@
+section {
+	text-align: center;
+	display: block;
+	width: 95%;
+	height: 100%;
+	padding-top: 20px;
+}
+h4{
+	margin:10px;
+}
+h2,h3{
+
+	margin: 10px;
+}
+section p {
+	margin: 5px;
+
+}
+.code{
+	height: 45%;
+	width: 45%;
+}
+footer{
+	width: 95%;
+
+}
+
+
+
