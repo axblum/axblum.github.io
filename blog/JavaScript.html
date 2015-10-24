@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/highlight.css">
+    <script src="http://cdn.jsdelivr.net/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+    <title>Ruby Classes vs JavaScript Constructor Functions</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="../imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../projects/index.html">Projects</a></li>
+                        <li><a href="../aboutme.html">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../imgs/pano.jpg" alt="Concert Pano">
+        </header>
+        <main>
+            <div>
+                <h2>Ruby Classes vs JavaScript Constructor Functions</h2>
+                <h3>Posted: 10/23/2015</h3>
+            </div>
+            <section>So if you have been following along with my blog posts. Last week I wrote a blog post about Ruby classes. So I am gonna continue with the example that I used last week. If you look at the code below, you will see a Ruby class of Money.
+            </section>
+            <pre><code class="Ruby">
+          class Money
+            def initialize(denomination,serial_number,country)
+            @denomination = denomination
+            @serial_number = serial_number
+            end
+        end
+            </code></pre>
+            <section>The same object would created in JavaScript like so:</section>
+            <pre><code class="js">
+          function Money(denomination,serial,country){
+            this.denomination = denomination,
+            this.serial_number = serial_number,
+            this.country = country
+          }
+            </code></pre>
+            <section>For review one would create a new Money class in Ruby like so:.</section>
+            <pre>
+            <code>
+                jackson = Money.new(100,"1234","US")
+            </code>
+            </pre>
+             <section>In JavaScript this would be achieved by doing the following: </section>
+             <pre><code>
+                jackson = new Money(100,"1234","US")
+            </code>
+            </pre>
+            <section>Now lets take the valid method for the Money class in Ruby, seen below.</section>
+            <pre><code>
+                def valid
+                    if @serial_number.size = 10
+                        true
+                    else
+                        false
+                    end
+                end
+            </code></pre>
+            <section>This is where one of the major differences between Ruby classes and the JavaScript Constructor Function differ between the languages. One can create a function that is available to all of the Money objects in JavaScript however it can't be done within the Constructor function. This would be achieved by creating a prototype in Javascript. A prototype is a JavaScript function that is available to all objects of that type. It can be done like so:
+            </section>
+            <pre><code>
+            Money.prototype.valid = function() {
+                if(this.serial_number.length == 10)
+                    return true;
+                }
+            };
+            </code></pre>
+            <section>This will give every Money JS object the ability to check whether its valid or not.</section>
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/blumandrew"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/axblum"><img src="../imgs/github.png" alt="github"></a>
+            <p>All thoughts are mine &#169 2015 by Andrew Blum, unless otherwise noted.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
