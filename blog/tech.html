@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>SQL Injection</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="../imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../projects/index.html">Projects</a></li>
+                        <li><a href="../index.html">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../imgs/pano.jpg" alt="Concert Pano">
+        </header>
+        <main>
+            <div>
+                <h2>SQL Injection</h2>
+                <h2>and Protecting your Database</h2>
+                <h3>Posted: 11/2/2015</h3>
+            </div>
+           <section><p>What is SQL injection you ask?</p> SQL injection is a type of vulnerability that an application that accesses or updates an SQL database can be subject too. SQL injection can lead to the accessing or manipulating data maliciously.</section>
+           <section>SQL injection can be avoided or mitigated by following some general concepts when working with accessing data within a database via a frontend application. The first part is permissions. It is very important to make sure that your application is using the appropriate credentials to access the data or insert additional data. This means not using the same account as the one you used to setup your database.</section>
+           <section>The second thing to keep in mind is, how are the application is interacting with the back end database. Lets say you have a form that inserts a row of data into a table, it is best practice to sanitize the data before making the insert. This can be done by using one of the many frameworks that do ORM.</section>
+        </main>
+        <footer>
+         
+                    <a href="https://www.linkedin.com/in/blumandrew"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+
+
+                    <a href="https://github.com/axblum"><img src="../imgs/github.png" alt="github"></a>
+
+
+            <p>All thoughts are mine &#169 2015 by Andrew Blum, unless otherwise noted.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
