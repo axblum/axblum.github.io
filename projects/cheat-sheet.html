@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Andrew Blum -- Helpful Cheat Sheet</title>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/highlight.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css">
+    <script src="http://cdn.jsdelivr.net/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-nav">
+                <div class="logo">
+                    <img alt="beaker" src="../imgs/beaker.png"> Andrew Blum
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img alt="Concert Pano" src="../imgs/pano.jpg" class="pano">
+        </header>
+        <main>
+            <div class="left-col">
+                <section>
+                    <h3>Git</h3>
+                    <h4>Handy tips</h4>
+                    <h5>Show all the changes for a specific file:</h5>
+                    <pre><code class="bash">git log -p  &ltfile&gt</code></pre>
+                    <h5>Discard all the changes in the working directory:</h5>
+                    <pre><code class="bash">git reset --hard HEAD</code></pre>
+                    <h5>Show diff for tracked files</h5>
+                    <pre><code class="bash">git diff</code></pre>
+                </section>
+                <section>
+                    <h3>Ruby:</h3>
+                    <h4>Useful Methods:</h4>
+                    <h5>each(array):</h5>
+                    <pre><code>array.each{|element| puts element}</code></pre>
+                    <h5>each(hash):</h5>
+                    <pre><code class="ruby">hash.each{|value, key| puts "#{key} => #{value}"}</code></pre>
+                    <h5>map:</h5>
+                    <p>Returns an array of whatever is run in the block</p>
+                    <pre><code class="ruby">array.map{|n| n * 2 }</code></pre>
+                    <h5>select:</h5>
+                    <p>Returns an array for the elements that meet the criteria of whats in the block</p>
+                    <pre><code class="ruby">array.select{|n| n.even? }</code></pre>
+                    <section>
+                        <h4>Other Notes:</h4>
+                        <p class="notes"> All methods that end in ? should return a boolean</p>
+                        <p class="notes"> All returns are implicit if it is the last line in the method</p>
+                    </section>
+                </section>
+            </div>
+            <div class="right-col">
+                <section>
+                    <h3>JavaScript</h3>
+                    <h4> Useful things to remember</h4>
+                    <h5>for in</h5>
+                    <pre><code class="js">for(var i in object){
+    console.log(object[i]);
+}</code></pre>
+      <h5>forEach()</h5>
+                    <pre><code class="js">[1,2,3,4].forEach(function(x){ console.log(x);})</code></pre>
+                    <h5>filter</h5>
+                    <pre><code class="js">array.filter(function(x){ return x > 3});</code></pre>
+                    <h5>constructor functions for JS:</h5>
+                    <pre><code class="js">function Animal(type,name,size){
+    this.name = name;
+    this.type = type;
+    this.size = size;
+}</code></pre>
+
+                    <section>
+                        <h4>Other Notes:</h4>
+                        <p class="notes"> JavaScript returns are not implicit. You must explicitly return a value</p>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/blumandrew"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/axblum"><img src="../imgs/github.png" alt="github"></a>
+            <p>All thoughts are mine &#169 2015 by Andrew Blum, unless otherwise noted.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
