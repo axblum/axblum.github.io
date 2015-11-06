@@ -8,7 +8,7 @@ black-favicon: "/img/black-lab-glass.ico"
 disqus-shortname: "andrewblum"
 
 # Conversion
-markdown: redcarpet
+# markdown: redcarpet
 highlighter: pygments
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
@@ -73,3 +73,4 @@ social:
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+gems: [jekyll-paginate]
