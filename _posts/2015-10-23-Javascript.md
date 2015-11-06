@@ -41,11 +41,11 @@ Now lets take the valid method for the Money class in Ruby, seen below.
 
 ```ruby
 def valid
-    if @serial_number.size = 10
-        true
-    else
-        false
-    end
+  if @serial_number.size = 10
+    true
+  else
+    false
+  end
 end
 ```
 
