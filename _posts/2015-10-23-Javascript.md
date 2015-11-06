@@ -33,10 +33,12 @@ For review one would create a new Money class in Ruby like so:.
 jackson = Money.new(100,"1234","US")
 ```
 In JavaScript this would be achieved by doing the following:
+
 ```js
 jackson = new Money(100,"1234","US")
 ```
 Now lets take the valid method for the Money class in Ruby, seen below.
+
 ```ruby
 def valid
     if @serial_number.size = 10
@@ -56,4 +58,5 @@ Money.prototype.valid = function() {
     }
 };
 ```
+
 This will give every Money JS object the ability to check whether its valid or not.
