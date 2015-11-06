@@ -9,7 +9,8 @@ disqus-shortname: "andrewblum"
 
 #collection
 collections:
-  - projects
+  projects:
+    output: true
 
 # Conversion
 markdown: redcarpet
