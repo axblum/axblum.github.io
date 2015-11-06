@@ -8,8 +8,10 @@ black-favicon: "/img/black-lab-glass.ico"
 disqus-shortname: "andrewblum"
 
 # Conversion
-# markdown: kramdown
-# highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: pygments
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 syntax-highlighting:
