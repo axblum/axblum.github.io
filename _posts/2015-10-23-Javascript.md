@@ -19,20 +19,19 @@ end
 The same object would created in JavaScript like so:
 
 
-{% highlight js %}
+```js
 function Money(denomination,serial,country){
 this.denomination = denomination,
 this.serial_number = serial_number,
 this.country = country
 }
-{% endhighlight %}
+```
 
 For review one would create a new Money class in Ruby like so:.
 
-{% highlight js %}
+ ```js
 jackson = Money.new(100,"1234","US")
-{% endhighlight %}
-
+```
 In JavaScript this would be achieved by doing the following:
 {% highlight js %}
 jackson = new Money(100,"1234","US")
