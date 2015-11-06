@@ -7,14 +7,14 @@ tags: [ 'ruby', 'dbc' ]
 ---
 So if you have been following along with my blog posts. Last week I wrote a blog post about Ruby classes. So I am gonna continue with the example that I used last week. If you look at the code below, you will see a Ruby class of Money.
 
-{% highlight ruby %}
+```ruby
 class Money
 def initialize(denomination,serial_number,country)
   @denomination = denomination
   @serial_number = serial_number
   end
 end
-{% endhighlight %}
+```
 
 The same object would created in JavaScript like so:
 
