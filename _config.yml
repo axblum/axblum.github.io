@@ -1,0 +1,74 @@
+# Site settings
+author: "Andrew Blum"
+url: "http://axblum.github.io"
+title: "Andrew Blum"
+description: "Blog and website of Andrew Blum, blogging mainly for tech. Opinions expressed are mine."
+favicon: "/img/favicon.ico"
+black-favicon: "/img/black-lab-glass.ico"
+disqus-shortname: "andrewblum"
+
+# Conversion
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
+
+pages_list:
+  About: 'about'
+  Blog: 'blog'
+  Projects: 'projects'
+  Career: 'career'
+  Contact: 'contact'
+
+background-img: "/img/intro-bg.jpg"
+
+# About variables
+
+me-img: "/img/me.jpg"
+
+# Blog variables
+
+paginate: 15
+
+paginate_path: "blog/page:num"
+
+post-preview-words: 128
+
+fb-share: False
+twitter-share: False
+reddit-share: False
+
+# Career variables
+
+events:
+  - image: "/img/career/dev_bootcamp_logo.png"
+    date: "August 2015 - Today"
+    description: "Learning"
+  - image: "/img/career/tcc_logo.png"
+    date: "July 2012 - August 2015"
+    description: "IT Guru/Systems Engineer/DEVOPS @ The Climate Corporation"
+  - image: "/img/career/google.png"
+    date: "August 2010 - July 2012"
+    description: "Infomation Technology Resident @ Google"
+  - image: "/img/career/rit.jpg"
+    date: "September 2005 - 2009"
+    description: "BS in Applied Networking and Systems Administration"
+
+
+# First image of the Career timeline
+career-img: "/img/career/default.gif"
+
+# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+social:
+  - title: "github"
+    url: "https://github.com/axblum"
+  - title: "linkedin"
+    url: "http://linkedin.com/in/blumandrew"
+
+404-img: "/img/labtocat.png"
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
