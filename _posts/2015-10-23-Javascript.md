@@ -29,31 +29,31 @@ this.country = country
 
 For review one would create a new Money class in Ruby like so:.
 
- ```js
+ ```ruby
 jackson = Money.new(100,"1234","US")
 ```
 In JavaScript this would be achieved by doing the following:
-{% highlight js %}
+```js
 jackson = new Money(100,"1234","US")
-{% endhighlight %}
+```
 Now lets take the valid method for the Money class in Ruby, seen below.
-{% highlight ruby linenos %}
-    def valid
-        if @serial_number.size = 10
-            true
-        else
-            false
-        end
+```ruby
+def valid
+    if @serial_number.size = 10
+        true
+    else
+        false
     end
- {% endhighlight %}
+end
+```
 
-  This is where one of the major differences between Ruby classes and the JavaScript Constructor Function differ between the languages. One can create a function that is available to all of the Money objects in JavaScript however it can't be done within the Constructor function. This would be achieved by creating a prototype in Javascript. A prototype is a JavaScript function that is available to all objects of that type. It can be done like so:
+This is where one of the major differences between Ruby classes and the JavaScript Constructor Function differ between the languages. One can create a function that is available to all of the Money objects in JavaScript however it can't be done within the Constructor function. This would be achieved by creating a prototype in Javascript. A prototype is a JavaScript function that is available to all objects of that type. It can be done like so:
 
-  {% highlight js %}
-  Money.prototype.valid = function() {
-      if(this.serial_number.length == 10)
-          return true;
-      }
-  };
-  {% endhighlight %}
-  This will give every Money JS object the ability to check whether its valid or not.
+```js
+Money.prototype.valid = function() {
+    if(this.serial_number.length == 10)
+        return true;
+    }
+};
+```
+This will give every Money JS object the ability to check whether its valid or not.
