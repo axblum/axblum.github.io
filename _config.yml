@@ -16,7 +16,7 @@ highlighter: pygments
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 syntax-highlighting:
   enabled : true
-  css: css/pygments/syntax.css
+  css: css/syntax.css
 # Navigation bar links
 # Blog link in the blog and post pages will point to the blog.html#blog
 # In the default page it will point to the preview of the last post
