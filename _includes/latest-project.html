@@ -1,0 +1,20 @@
+<!-- Project Section -->
+<section id="{{ page.title }}" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+
+        {{ page.content | markdownify }}
+
+        {% assign project = site.projects.first %}
+          <small>. {{ project.category }} .</small>
+          <strong> <a href="{{ project.url }}">{{ project.title }} </a> </strong>
+          <small> <a href="{{ project.url }}#disqus_thread">Comments</a></small>
+        </h4>
+
+        {{ project.content | truncatewords: site.project-preview-words | strip_html | markdownify }}
+
+        <a href="/projects/index.html"><h4><strong>View more projects</strong></h4></a>
+
+      </div>
+    </div>
+</section>

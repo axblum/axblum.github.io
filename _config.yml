@@ -7,6 +7,10 @@ favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
 disqus-shortname: "andrewblum"
 
+#collection
+collections:
+  - projects
+
 # Conversion
 markdown: redcarpet
 redcarpet:
